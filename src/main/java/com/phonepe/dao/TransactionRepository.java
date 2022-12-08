@@ -1,5 +1,8 @@
 package com.phonepe.dao;
 
-public interface TransactionRepository {
+import com.phonepe.entity.TransactionLog;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface TransactionRepository extends JpaRepository<TransactionLog, Integer> {
 
 }
